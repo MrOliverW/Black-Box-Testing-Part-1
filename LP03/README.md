@@ -39,7 +39,7 @@ Black-box testing involves designing tests without examining the application's i
 - Every valid reservation includes a one-time $50 cleaning fee.
 - Each guest over five costs an additional $25 per night.
 - The check-in date must be before the checkout date.
-- The number of nights is calculated as `checkout date - check-in date`.
+- The number of nights is calculated as `checkout date - check-in date`. (OW) Does this make sense?
 - The checkout date is not counted as a reserved night.
 - Every night in the requested date range must be available.
 - Invalid reservation information raises a `ValueError`.
