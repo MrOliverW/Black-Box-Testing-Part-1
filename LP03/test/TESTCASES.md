@@ -7,25 +7,25 @@
   - Expected result
 
 -Test Case #01
-Classification: Number of Nights must be between 1 and 31 nights
-Partition:
-Input: 25 nights
+Classification: Number of nights
+Partition: Valid
+Input: '25' nights
 Expected result: Number of Nights must be between 1 and 31 nights
 
 -Test Case #02
-Classification: Number of guests must be between 1 and 12
-Partition:
-Input:
-Expected result:
+Classification: Number of guests
+Partition: Valid, standard rate
+Input: '2'
+Expected result:Number of guests must be between 1 and 12
 
 -Test Case #03 
-Classification: Check-in and checkout dates are chronologically linear
-Partition:
-Input:
-Expected result:
+Classification: Check-in / Checkout
+Partition: Valid
+Input: Check-in date is before checkout date
+Expected result:Check-in and checkout dates are chronologically linear
 
 -Test Case #04 
-Classification: Reservations can only occur is there is availability
-Partition:
-Input:
-Expected result:
+Classification: Availability
+Partition: Valid
+Input: Room is available and is booked.
+Expected result:Reservations can only occur is there is availability
