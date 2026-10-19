@@ -1,5 +1,28 @@
 # Learning Practice: Black-Box Testing, Part 1
 
+## COMPLETED Equivalence Partitioning Test Matrix 
+NOTE: This Equivalence Partitioning Test Matrix is also in the file Learning Practice - AD361 (Week 3).dox - It is displayed here as well as per the assignment instructions.
+
+| Classification | Partition | Range / Condition | Expected Result |
+| :--- | :--- | :--- | :--- |
+| **Number of nights** | Invalid low | Fewer than 1 night | The number of nights is invalid |
+| **Number of nights** | Valid | 1 – 31 nights | The number of nights is valid |
+| **Number of nights** | Invalid high | More than 31 nights | The number of nights is invalid |
+| **Number of guests** | Invalid low | Fewer than 1 guest | `ValueError` |
+| **Number of guests** | Valid, standard rate | 1 – 5 guests | No additional guest fee |
+| **Number of guests** | Valid, additional fee | 6 – 12 guests | Additional USD25 per guest per night |
+| **Number of guests** | Invalid high | More than 12 guests | `ValueError` |
+| **Check-in / Checkout** | Valid | Check-in date is before checkout date | The reservation can proceed if other requirements are met |
+| **Check-in / Checkout** | Invalid | Check-in date is the same as checkout date | `ValueError` |
+| **Check-in / Checkout** | Invalid | Check-in date is after checkout date | `ValueError` |
+| **Availability** | Valid | All requested nights are available | The reservation can proceed if other requirements are met |
+| **Availability** | Invalid | At least one unavailable night | `UnavailableError` |
+
+
+
+
+
+
 ## Topics
 
 - Black-box testing
